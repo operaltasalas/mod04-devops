@@ -2,8 +2,8 @@ pipeline{
     agent any
 
     environment {
-        IMAGE_NAME = "renatoapaza/python-app"
-        DOCKERHUB_CREDS = credentials("jenkins-udi")
+        IMAGE_NAME = "operaltasalas/docker_udi"
+        DOCKERHUB_CREDS = credentials("dockerhub")
         NameContainer = "python-app"
     }
 
@@ -16,7 +16,7 @@ pipeline{
         
         stage('Run Unit Test') {
             steps {
-                sh 'cd python-app && pip install -r requirements.txt && python3 -m unittest test_app.py'
+                sh 'cd python-app && pip install -r requeriments.txt && python3 -m unittest test_app.py'
             }
         }
         
