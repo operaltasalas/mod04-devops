@@ -3,7 +3,7 @@ pipeline{
 
     environment {
         IMAGE_NAME = "operaltasalas/docker_udi"
-        DOCKERHUB_CREDS = credentials("dockerhub")
+        DOCKERHUB_CREDS = credentials("oscar")
         NameContainer = "docker_udi"
     }
 
