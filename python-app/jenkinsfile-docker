@@ -1,9 +1,9 @@
  pipeline {   
     agent any
     environment {
-        DOCKERHUB_CREDENTIALS= credentials('oscar')
+        DOCKERHUB_CREDENTIALS= credentials('peralta')
         registry = "operaltasalas/python-app"
-        registryCredential = 'oscar'
+        registryCredential = 'peralta'
         dockerImage = ''
     }
     stages {
