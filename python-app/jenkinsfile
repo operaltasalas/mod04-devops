@@ -2,7 +2,7 @@ pipeline{
     agent any
 
     environment {
-        IMAGE_NAME = "operaltasalas/docker_udi"
+        IMAGE_NAME = "operaltasalas/python-app"
         DOCKERHUB_CREDS = credentials("oscar")
         NameContainer = "docker_udi"
     }
